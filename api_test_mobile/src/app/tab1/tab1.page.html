@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card *ngFor="let product of products">
+    <ion-card-header>
+      <ion-card-subtitle>{{product.price}} €</ion-card-subtitle>
+      <ion-card-title>{{product?.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{product.description}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
